@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toggleClass()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>  
+  p {  
+    margin: 4px;  
+    font-size: 16px;  
+    font-weight: bolder;  
+    cursor: pointer;  
+  }  
+  .blue {  
+    color: black;  
+  }  
+  .highlight {  
+    background: pink;  
+  }  
+  </style>  
+</head>  
+<body>  
+<p class="blue highlight">be-practical. com</p>  
+<p class="blue">Java Tutorial</p>  
+<p class="blue">SQL Tutorial</p>  
+<p class="blue">Android Tutorial</p>  
+<p class="blue">HTML Tutorial</p>  
+<p class="blue">etc.</p>  
+<script>  
+$( "p" ).click(function() {  
+$( this ).toggleClass( "highlight" );  
+});  
+</script>  
+</body>
+</html>

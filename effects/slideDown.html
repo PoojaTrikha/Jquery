@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: deeppink;
+            color: #fff;
+            border:1px solid #c3c2c2;
+            cursor: pointer;
+        }
+
+        #panel {
+            padding: 30px;
+            display: none;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+        
+        $("#panel").slideDown(4000);
+            
+        });
+    });
+    
+    
+    </script>
+    
+</head>
+<body>
+    <h1>Jquery effects - side down </h1>
+    <div id="flip">Click on me slide down panel </div>
+    <div id="panel">
+        <p>To load a hosted library, copy and paste the HTML snippet for that library (shown below) in your web page. For
+            instance, to load jQuery, embed thesnippet in your web page.
+            We recommend that you load libraries from the CDN via HTTPS, even if your own website only uses HTTP. Nowadays,
+            performance is fast, and caching works just the same. The CDN's files are served with CORS and Timing-Allow headers
+            and
+            allowed to be cached for 1 year.
+        </p>
+    </div>
+</body>
+</html>

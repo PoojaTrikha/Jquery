@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Jquery mouse enter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        /*$(selector).mousedown()*/
+    $(document).ready(function(){
+       $("input:first").mousedown(function()
+      {
+          $("span").text("Enter the username..Not more than 10 characters.").show().fadeOut(8000); 
+           $("span").css("background-color", "red");
+           $("span").css("color", "white");
+           $("span").css("padding","20px");
+           $("span").css("margin-top","20px");
+           $("span").css("border-radius","10px");
+           
+       }); 
+    });
+    </script>
+    </head>
+    <body>
+        <div style="margin:30px;">
+        <!--<h1>This is test heading</h1>-->
+        <input type="text" >
+        <span></span>
+        </div>
+    </body>
+</html>

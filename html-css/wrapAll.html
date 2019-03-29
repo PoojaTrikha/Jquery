@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wrapAll()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>  
+		$(document).ready(function(){  
+		    $("button").click(function(){  
+		        $("p").wrapAll("<div></div>");  
+		    });  
+		});  
+	</script>  
+	<style>  
+		div{background-color: pink;}  
+	</style>  
+	</head>  
+	<body>  
+		<p>Hello Guys!</p>  
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero rem neque, quidem dolorem, iste reprehenderit non velit architecto sequi nihil voluptate aliquid animi eveniet numquam eaque excepturi sint ipsa?</p>  
+
+		<button>Wrap a div element around all p elements</button>  
+
+</body>
+</html>

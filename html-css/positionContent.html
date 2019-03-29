@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>  
+			$(document).ready(function() {  
+				$("div").click(function () {  
+					var position = $(this).position();  
+					$("#lresult").html("left position: <span>" + position.left + "</span>.");  
+					$("#tresult").html("top position: <span>" + position.top + "</span>.");  
+				});  
+			});  
+		</script>  
+	<style>  
+		div { 
+				width:60px; 
+				height:60px; 
+				margin:5px; 
+				float:left; 
+				cursor:pointer;
+			}  
+	</style>  
+	</head>  
+	<body>  
+	<p>Click on any square:</p>  
+	<span id="lresult"> </span>  
+	<span id="tresult"> </span>  
+	<div  style="background-color:#ffd700"></div>  
+	<div  style="background-color:#030303"></div>  
+	<div  style="background-color:#473c8b"></div>  
+	<div  style="background-color:#ee82ee"></div>
+	
+</body>
+</html>

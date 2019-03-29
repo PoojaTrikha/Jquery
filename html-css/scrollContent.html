@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+          alert($("div").scrollTop() +"px");
+        });
+    });
+    </script>
+</head>
+<body>
+   <div style="border:1px solid black;width:150px;height:100px;overflow:auto;">  
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eius enim quaerat, a ut ullam illo tenetur quasi. Saepe vitae aut doloribus error quaerat esse aliquid cumque quas in quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque eos soluta reiciendis, vero quaerat, ullam error odit dolor pariatur ex quia a. Consectetur iure culpa similique aut, hic quasi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime, pariatur tenetur qui ratione perspiciatis iste minus praesentium rerum porro amet provident a dolorum, ut ducimus magni modi repellat id! </p>
+</div>
+<br>  
+<button>Return the vertical position of the scrollbar</button>  
+<p>Move the scrollbar down and click the button again.</p>  
+	
+</body>
+</html>

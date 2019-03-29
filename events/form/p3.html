@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>submit()</title>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		 <script>
+		 	$(document).ready(function(){
+		 		$("form").submit(function(event){
+			 			if($("input:first").val() === "pooja") 
+			 		{
+			 			$("span").text("submitted successfully").show().fadeOut(5000);
+			 			return;
+			 		} else {
+			 			$("span").text("not valid").show().fadeOut(3000);
+			 			event.preventDefault();
+			 		}
+		 	});
+		 	});
+		 </script>
+</head>
+<body>
+	<form action="javascript:alert('You have successfully submitted value.')">
+		<label for="name">Name</label>
+			<br><br>
+		<input type="text">
+			<br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<span></span>
+</body>
+</html>

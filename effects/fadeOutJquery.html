@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fade Out Effects in the Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 150px;
+            background-color: rebeccapurple;
+            
+        }
+
+        #div2 {
+             width: 200px;
+            height: 150px;
+            background-color: green;
+            
+        }
+
+        #div3 {
+            width: 200px;
+            height: 150px;
+            background-color: rgb(231, 103, 18);
+           
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+       
+        $("button").click(function(){
+           $("#div1").fadeOut();
+           $("#div2").fadeOut("slow");
+           $("#div3").fadeOut(3000);
+        });
+        
+    });
+    
+    
+    </script>
+
+</head>
+<body>
+    <h1>FadeOut()</h1>
+    <button>Click Me</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blur() focus()</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+        p{
+            color:deeppink;
+        }
+        div{
+            color:deepskyblue;
+        }
+    
+    </style>
+	</head>  
+	<body>  
+			<p>This is Select() event</p>
+			<input type="text" value="hi practical institute select">
+			<div>
+         	</div>
+         	
+         	<script>
+             $(document).ready(function(){
+                 $("input").select(function(){
+                    $("div").text("Huurry...You selected Be-practical").show().fadeOut(3000); 
+                 });
+             })
+            </script>
+	</body>
+</html>

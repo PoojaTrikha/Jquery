@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>delay()</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		#block1 {
+			width: 100px;
+			height: 100px;
+			display: none;
+			background-color: deepskyblue;
+		}
+	</style>
+
+	<script>
+		
+		$(document).ready(function(){
+			$("#btn").click(function(){
+
+				$("#block1").delay(3000).fadeIn();
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn"> Delay() </button>
+	<div id="block1"></div>
+</body>
+</html>

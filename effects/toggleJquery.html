@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggel Effects On Jquery</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+               $("p").toggle(); 
+            });
+            
+           
+        });
+    </script>
+</head>
+<body>
+    <h1>Jquery effect - Toggle()</h1>
+    <p>
+     To load a hosted library, copy and paste the HTML snippet for that library (shown below) in your web page. For
+    instance, to load jQuery, embed thesnippet in your web page.
+    We recommend that you load libraries from the CDN via HTTPS, even if your own website only uses HTTP. Nowadays,
+    performance is fast, and caching works just the same. The CDN's files are served with CORS and Timing-Allow headers and
+    allowed to be cached for 1 year.   
+    </p>
+    
+    <button id="toggle">Toggle</button>
+    
+</body>
+</html>

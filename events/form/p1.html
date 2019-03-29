@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>click()</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>  
+	$(document).ready(function(){ 
+        $("#txt").blur(function(){
+            $(this).css("background-color","red");
+            $("span").css("visibility","hidden");
+        });
+        
+        $("#txt").focus(function(){
+            $("span").css("visibility","visible");
+        });
+	      
+	});  
+	</script>  
+	</head>  
+<body>  
+	<label for="text">Enter the name</label>
+	<br>
+	<input type ="text" id="txt">
+	<span style="visibility:hidden;color:red;">Name should be capitalize and not more than 15 chars.</span>
+</body>
+</html>

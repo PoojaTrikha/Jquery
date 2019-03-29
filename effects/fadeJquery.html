@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fade In Effects in the Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 150px;
+            background-color: rebeccapurple;
+            display:none;
+        }
+
+        #div2 {
+             width: 200px;
+            height: 150px;
+            background-color: green;
+            display:none;
+        }
+
+        #div3 {
+               width: 200px;
+            height: 150px;
+            background-color: rgb(231, 103, 18);
+            display:none;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+       
+        $("button").click(function(){
+           $("#div1").fadeIn();
+           $("#div2").fadeIn("slow");
+           $("#div3").fadeIn(3000);
+        });
+        
+    });
+    
+    
+    </script>
+
+</head>
+<body>
+    <h1>FadeIn ()</h1>
+    <button>Click Me</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>
